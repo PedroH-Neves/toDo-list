@@ -38,9 +38,9 @@ To get a local copy up and running follow these simple example steps.
 
 - Open editor terminal
 
-- Digit "git clone https://github.com/PedroH-Neves/To-do-List.git
+- Digit "git clone https://github.com/PedroH-Neves/toDo-list.git
 
-- Then "cd To-do-List"
+- Then "cd toDo-List"
 
 - File editing can then be applied using any code editor.
 
@@ -62,7 +62,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/PedroH-Neves/To-do-List/issues).
+Feel free to check the [issues page](https://github.com/PedroH-Neves/toDo-list/issues).
 
 ## Show your support
 
