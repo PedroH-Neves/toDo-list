@@ -1,3 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
 body {
-  background-color: rebeccapurple;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin: 3% 38%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.to-do-title {
+  display: flex;
+  justify-content: center;
+  gap: 250px;
+  margin: 15px;
+}
+
+.title {
+  font-size: 14px;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reset-list-btn {
+  background-color: #fff;
+  border: none;
+}
+
+.to-do-input {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  margin: 15px;
+}
+
+.add-to-list {
+  border: none;
+}
+
+.enter-list-btn {
+  background-color: #fff;
+  border: none;
+}
+
+.to-do-tasks {
+  color: black;
+}
+
+#tasks-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.items-list {
+  color: black;
+}
+
+.each-item {
+  display: flex;
+  gap: 120px;
+  margin: 15px 40px;
+  padding-left: 10px;
+}
+
+.task-text {
+  display: flex;
+  font-size: 18px;
+  width: 100px;
+}
+
+.division-line {
+  border: 1px solid #ededed;
+}
+
+.change-task-btn {
+  background-color: #fff;
+  border: none;
+}
+
+.reset-list-btn:hover {
+  color: blueviolet;
+}
+
+.enter-list-btn:hover {
+  color: red;
+}
+
+.change-task-btn:hover {
+  color: green;
 }
