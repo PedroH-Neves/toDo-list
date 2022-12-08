@@ -1,16 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Wbpack Exercise</title>
-  <script defer="defer" src="index.bundle.js"></script>
-  <script defer="defer" src="print.bundle.js"></script>
-</head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/bf66e12569.js" crossorigin="anonymous"></script>
+  <title>To Do List</title>
+<script defer src="runtime.js"></script><script defer src="main.js"></script></head>
 
 <body>
-  <h1>Hello webpack!</h1>
+  <div class="title-box">
+    <section class="to-do-title">
+      <h1 class="title">Today's To Do</h1><button class="reset-list-btn" type="reset"><i class="fa-solid fa-arrows-rotate"></i></button>
+    </section>
+    <hr class="division-line">
+  </div>
+  <div class="input-box">
+    <section class="to-do-input">
+      <input class="add-to-list" placeholder="Add to your list..."><button class="enter-list-btn" type="submit"><i class="fa-solid fa-arrow-turn-down"></i></button>
+    </section>
+    <hr class="division-line">
+  </div>
+    <section class="to-do-tasks">
+      <div id="tasks-list">
+  
+      </div>
+    </section>
 </body>
 
 </html>
