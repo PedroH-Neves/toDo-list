@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/bf66e12569.js" crossorigin="anonymous"></script>
-  <title>To Do List</title>
-<script defer src="runtime.js"></script><script defer src="main.js"></script></head>
-
-<body>
-  <div class="title-box">
-    <section class="to-do-title">
-      <h1 class="title">Today's To Do</h1><button class="reset-list-btn" type="reset"><i class="fa-solid fa-arrows-rotate"></i></button>
-    </section>
-    <hr class="division-line">
-  </div>
-  <div class="input-box">
-    <section class="to-do-input">
-      <input class="add-to-list" placeholder="Add to your list..."><button class="enter-list-btn" type="submit"><i class="fa-solid fa-arrow-turn-down"></i></button>
-    </section>
-    <hr class="division-line">
-  </div>
-    <section class="to-do-tasks">
-      <div id="tasks-list">
-  
-      </div>
-    </section>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/bf66e12569.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>To Do List</title>
+  <script defer src="runtime.js"></script><script defer src="main.js"></script></head>
+  <body>
+    <div class="title-div">
+      <h1 class="title">To Do List</h1>
+      <button id="reset-btn" class="title-btn">
+        <i class="fa-solid fa-arrows-rotate"></i>
+      </button>
+    </div>
+    <form id="task-form">
+      <input id="task-input" name="task" placeholder="Add your task here" />
+      <button type="submit" class="submit-btn">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+    </form>
+    <div class="tasks-div">
+      <ul id="tasks-list"></ul>
+    </div>
+  </body>
 </html>
