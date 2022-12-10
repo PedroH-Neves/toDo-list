@@ -1,7 +1,7 @@
 const showTasks = () => {
   const tasksElement = document.getElementById('tasks-list');
   const tasksList = JSON.parse(localStorage.getItem('tasks')) || [];
-  const clearBtn = document.getElementById('clear-btn')
+  const clearBtn = document.getElementById('clear-btn');
 
   tasksElement.innerHTML = '';
 
@@ -31,12 +31,11 @@ const showTasks = () => {
     const lineComplete = document.querySelector(`.cool-input-${task.index}`);
 
     checkBox.addEventListener('change', () => {
-
       task.completed = !task.completed;
 
       localStorage.setItem('tasks', JSON.stringify(tasksList));
 
-      if(task.completed) {
+      if (task.completed) {
         lineComplete.classList.add('completed');
       } else {
         lineComplete.classList.remove('completed');
@@ -71,14 +70,14 @@ const showTasks = () => {
     clearBtn.addEventListener('click', () => {
       const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
       const updatedTaskList = tasks.filter((item) => item.completed === false);
-      
+
       updatedTaskList.forEach((item, index) => {
         item.index = index + 1;
       });
 
       localStorage.setItem('tasks', JSON.stringify(updatedTaskList));
       showTasks();
-    })
+    });
   });
 };
 
