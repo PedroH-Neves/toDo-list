@@ -1,3 +1,4 @@
+
 const showTasks = () => {
   const tasksElement = document.getElementById('tasks-list');
   const tasksList = JSON.parse(localStorage.getItem('tasks')) || [];
@@ -44,10 +45,12 @@ const showTasks = () => {
 
       updatedTaskList.forEach((item, index) => {
         item.index = index + 1;
+
       });
 
       localStorage.setItem('tasks', JSON.stringify(updatedTaskList));
       e.target.parentElement.remove();
+      showTasks();
     });
   });
 };
