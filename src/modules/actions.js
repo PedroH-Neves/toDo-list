@@ -1,6 +1,7 @@
 const showTasks = () => {
   const tasksElement = document.getElementById('tasks-list');
   const tasksList = JSON.parse(localStorage.getItem('tasks')) || [];
+  const clearBtn = document.getElementById('clear-btn');
 
   tasksElement.innerHTML = '';
 
@@ -13,10 +14,11 @@ const showTasks = () => {
     const deleteBtn = document.createElement('button');
 
     checkBox.type = 'checkbox';
+    checkBox.checked = task.completed;
     description.classList.add('task-description');
     editBtn.classList.add('edit-btn');
     deleteBtn.classList.add('delete-btn');
-    description.innerHTML = `<input class="cool-input" id="${task.index}" name="editedtask" type="text" value="${task.description}" readonly>`;
+    description.innerHTML = `<input class="cool-input-${task.index} style-input" id="${task.index}" name="editedtask" type="text" value="${task.description}" readonly>`;
     editBtn.innerHTML = 'Edit';
     deleteBtn.innerHTML = 'Delete';
 
@@ -25,6 +27,20 @@ const showTasks = () => {
     taskItem.appendChild(description);
     taskItem.appendChild(editBtn);
     taskItem.appendChild(deleteBtn);
+
+    const lineComplete = document.querySelector(`.cool-input-${task.index}`);
+
+    checkBox.addEventListener('change', () => {
+      task.completed = !task.completed;
+
+      localStorage.setItem('tasks', JSON.stringify(tasksList));
+
+      if (task.completed) {
+        lineComplete.classList.add('completed');
+      } else {
+        lineComplete.classList.remove('completed');
+      }
+    });
 
     editBtn.addEventListener('click', () => {
       const editedTask = document.getElementById(`${task.index}`);
@@ -48,6 +64,18 @@ const showTasks = () => {
 
       localStorage.setItem('tasks', JSON.stringify(updatedTaskList));
       e.target.parentElement.remove();
+      showTasks();
+    });
+
+    clearBtn.addEventListener('click', () => {
+      const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+      const updatedTaskList = tasks.filter((item) => item.completed === false);
+
+      updatedTaskList.forEach((item, index) => {
+        item.index = index + 1;
+      });
+
+      localStorage.setItem('tasks', JSON.stringify(updatedTaskList));
       showTasks();
     });
   });

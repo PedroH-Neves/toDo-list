@@ -61,7 +61,7 @@ ul {
   list-style: none;
 }
 
-.cool-input {
+.style-input {
   width: 200px;
   border: none;
   border-bottom: 0.3px solid gray;
@@ -81,4 +81,13 @@ ul {
   border-radius: 10%;
   border: none;
   color: white;
+}
+
+#clear-btn {
+  border: none;
+  background-color: #fff;
+}
+
+.completed {
+  text-decoration: line-through;
 }

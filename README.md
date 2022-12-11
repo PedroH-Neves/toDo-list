@@ -180,9 +180,9 @@ Example:
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
-👤 **Author1**
+👤 **Pedro Henrique Domingues Neves**
 
 - GitHub: [@PedroH-Neves](https://github.com/PedroH-Neves)
 - Twitter: [@PedroHDN710](https://twitter.com/PedroHDN710)
@@ -195,8 +195,6 @@ Example:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -240,8 +238,6 @@ I would like to thank my brother who is always helping me.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
